@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+	<!--[if lt IE 9]>
+	  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+	<![endif]-->
+	<!-- 以上均可在bootstrap中文网中复制 -->
+
+    <!-- 引入bootstrap样式文件 -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.login{
+			width: 200px;
+			height: 200px;
+			line-height: 200px;
+			text-align: center;
+		}
+		
+		[class^="col-lg"]{
+			border: 1px solid black;
+		}
+		.row:nth-child(1){       /* 第一个.row */
+			background-color: pink;
+		}
+	</style>
+  </head>
+  <body>
+		<!-- 1.直接在文档中复制一个按钮 -->
+		<button type="button" class="btn btn-success">（成功）Success</button>    
+		<!-- 2.其实只复制类名即可 -->
+		<div class="btn btn-success">登录</div>
+		<!-- 3.自行修改一下样式 -->
+		<div class="btn btn-success login">登录</div>
+		<!-- 4.自带container类布局容器 -->
+		<div class="container">123</div>
+		<!-- 5.还带container-fluid类布局容器 -->
+		<div class="container-fluid">123</div>
+		
+		<!-- 6.栅格系数 -->
+		<div class="container">
+			<!-- 在同一行中平均分,在不同大小的屏幕下份数不同-->
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs=12">C</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs=12">C</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs=12">C</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs=12">C</div>
+			</div>
+			<!-- 加起来刚好等于12则恰好平分 -->
+			<div class="row">
+				<div class="col-lg-6">C</div>
+				<div class="col-lg-3">C</div>
+				<div class="col-lg-2">C</div>
+				<div class="col-lg-1">C</div>
+			</div>
+			<div class="row">
+			<!-- 加起来小于12则留白 -->
+				<div class="col-lg-5">C</div>
+				<div class="col-lg-3">C</div>
+				<div class="col-lg-2">C</div>
+				<div class="col-lg-1">C</div>
+			</div>
+			<div class="row">
+			<!-- 加起来大于12则过行 -->
+				<div class="col-lg-6">C</div>
+				<div class="col-lg-3">C</div>
+				<div class="col-lg-3">C</div>
+				<div class="col-lg-1">C</div>
+			</div>
+		</div>
+  </body>
+ </html>
+  
+  

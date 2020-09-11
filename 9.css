@@ -1,0 +1,13 @@
+html {
+  font-size: 50px;
+}
+div {
+  width: 300px;
+  height: 125px;
+  border: 15px solid firebrick;
+  background-color: #444444;
+}
+img {
+  width: 1.64rem;
+  height: 1.64rem;
+}

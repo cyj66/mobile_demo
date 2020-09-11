@@ -1,0 +1,140 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	width:100%;
+	min-width:320px;
+	max-width:640px;
+	margin:0 auto;
+	font-size:14px;
+	line-height: 1.5;   /* 字体大小的1.5倍 */
+	color:#666;
+	font-family:-apple-system,Helvetica,sans-serif;
+}
+a{
+	color:#666;
+	text-decoration: none;
+}
+/* 顶部 */
+.app{
+	height: 45px;
+}
+.app ul li{
+	float: left;
+	height: 45px;
+	list-style:none;
+	background-color: #333333;
+	line-height: 45px;
+	text-align: center;
+}
+.app ul li:nth-child(1){
+	width:8%;
+}
+.app ul li:nth-child(1) img{
+	width: 10px;
+}
+.app ul li:nth-child(2){
+	width:10%;
+}
+.app ul li:nth-child(2) img{
+	width:30px;
+	vertical-align: middle;     /* 默认基线对齐 */
+} 
+.app ul li:nth-child(3){
+	width:57%;
+	color:white;
+}
+.app ul li:nth-child(4){
+	width:25%;
+	background-color: #CD2525;
+	color:white;
+}
+
+/* 搜索*/
+.search-wrap{
+	position:fixed;
+	width:100%;
+	height: 44px;
+	overflow: hidden;   /* 外边距塌陷 */
+	min-width:320px;
+	max-height:640px;
+}
+.search-btn{
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 44px;
+}
+.search-btn::after{
+	content:"";
+	display: block;
+	width: 20px;
+	height: 18px;
+	background: url(menu.png) no-repeat;
+	background-size:20px 18px;
+	margin:14px 0 0 15px;
+}
+.search-login{
+	position:absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 44px;
+	color:white;
+	line-height: 44px;
+}
+.search{                  /* 标准流盒子再给个外边距,从而实现拉伸效果,二另外两部分不变 */
+    position:relative;
+	margin:0 50px;
+	background-color: #fff;
+	height: 37px;
+	border-radius: 20px;
+	margin-top: 10px;
+}
+.JD{
+	width: 20px;
+	height: 15px;
+	position:absolute;
+	top: 8px;
+	left: 13px;
+	background: url(JD.png) no-repeat;
+	background-size:20px 15px;
+}
+.JD::after{
+	position:absolute;
+	top: 0;
+	right: -10px;
+	content:"";
+	display:block;
+	width: 1px;
+	height: 15px;
+	background-color: #ccc;
+}
+.sou{
+	width: 18px;
+	height: 15px;
+	position:absolute;
+	top: 8px;
+	left: 50px;
+	background: url(jd-sprites.png) no-repeat -83px 0;             /* 二倍精灵图 */
+	background-size: 200px;
+}
+
+.slider img{
+	width:100%;
+}
+
+nav a{
+	float: left;
+	width:20%;
+	text-align: center;
+}
+nav a img{
+	width: 40px;
+	margin:10px 0;
+}
+nav a span{
+	display: block;
+}

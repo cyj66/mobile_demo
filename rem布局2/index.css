@@ -1,0 +1,9 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  width: 10rem;    //flexible自动划分成十等份
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial,helvetica;
+  background: #f2f2f2;
+}

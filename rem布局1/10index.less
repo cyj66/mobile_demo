@@ -1,0 +1,94 @@
+//首页样式
+@import "10common.less";      //导入less,可以不加后缀
+//@import将一个样式文件导入到另一个样式文件中
+//<link>将样式文件引入到html页面中
+body{
+	min-width:320px;
+	width:15rem;   //不用最大宽度
+	margin:0 auto;
+	line-height: 1.5;
+	font-family: Arial,helvetica;
+	background: #f2f2f2;
+}
+@basefont:50;      //在750px的设计稿
+// 顶部搜索栏
+.search-content{
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);    //居中两部曲
+	width: 15rem;
+	height: 88rem / @basefont ;  
+	background-color: #ffc001;
+	
+	.classify{
+		width:36rem / @basefont;
+		height: 60rem / @basefont;
+		background:url(301.png) no-repeat;
+		margin:10rem / @basefont 
+	}
+	.search{
+		flex:1;
+		input{
+			width:100%;
+			border:0;  //去掉边框
+			outline: none;
+			height: 66rem / @basefont;
+			border-radius:33rem / @basefont;    //圆角半径为高度的一半
+			background-color: #fff2cc;
+			font-size: 25rem / @basefont;
+			padding-left:55rem / @basefont;
+			color:#757575;
+			}
+	}
+	.login{
+		width:36rem / @basefont;
+		height: 60rem / @basefont;
+		background:url(302.png) no-repeat;
+		margin:10rem / @basefont 
+	}
+}
+
+// banner
+.banner{
+	width: 750rem / @basefont;
+	height: 368rem / @basefont;
+	img{
+		width:100%;
+		height: 100%;
+	}
+}
+
+//ad
+.ad{
+	display: flex;
+	a{
+		flex:1;
+		img{
+			width:100%;
+		}
+	}
+}
+
+//nav
+nav{
+	width:750rem / @basefont;
+	a{
+		float: left;
+		width: 150rem / @basefont;
+		height: 142rem / @basefont;
+		text-align: center;
+		img{
+			display: block;
+			width: 84rem / @basefont;
+			margin: 10rem / @basefont auto 0;
+		}
+		span{
+			display: block;
+			margin-top:-5rem / @basefont;
+			font-size:22rem / @basefont;
+			color:#333;
+		}
+	}
+}

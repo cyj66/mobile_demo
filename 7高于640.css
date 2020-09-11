@@ -1,0 +1,11 @@
+div{
+	float: left;
+	width:50%;
+	height: 400px;
+}
+div:nth-child(1){
+	background-color: burlywood;
+}
+div:nth-child(2){
+	background-color: royalblue;
+}

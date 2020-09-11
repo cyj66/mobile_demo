@@ -1,0 +1,6 @@
+/* 根据设计稿,container的最大宽度为1280px */
+@media screen and (min-width:1280px){
+	.container{
+		width:1280px;
+	}
+}
